@@ -1,0 +1,41 @@
+.chat-history {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+
+  .contact-info-mobile {
+    display: none;
+  }
+
+  .message {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 60%;
+    word-wrap: break-word;
+
+    &.sent {
+      align-self: flex-end;
+      background-color: #dcf8c6;
+    }
+
+    &.received {
+      align-self: flex-start;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+
+    div {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .chat-history {
+    .contact-info-mobile {
+      display: block;
+      margin-bottom: 10px;
+    }
+  }
+}

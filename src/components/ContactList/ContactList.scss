@@ -1,0 +1,74 @@
+.contact-list {
+  &__button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  &__modal {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &__overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__modal-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__modal-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__modal-close {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__modal-body {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+}
