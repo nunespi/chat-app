@@ -2,7 +2,7 @@ import React from 'react';
 import ChatItem from '../ChatItem/ChatItem';
 import { contactData } from '../../data';
 import { ChatListProps, Message } from '../../types';
-import './ChatList.scss'; // Импорт стилей
+import './ChatList.scss';
 
 const ChatList: React.FC<ChatListProps> = ({ chats, setSelectedChat, selectedChat }) => {
   const getLastMessage = (messages: Message[]) => {

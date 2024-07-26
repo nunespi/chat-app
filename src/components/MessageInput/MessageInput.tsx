@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { MessageInputProps } from '../../types';
 import './MessageInput.scss';
-import sendIcon from '../../assets/send-icon.svg'; // Импорт иконки отправки
+import sendIcon from '../../assets/send-icon.svg';
 
 const MessageInput: React.FC<MessageInputProps> = ({ onSendMessage }) => {
   const [newMessage, setNewMessage] = useState<string>('');
